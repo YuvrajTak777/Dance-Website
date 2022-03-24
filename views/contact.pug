@@ -1,0 +1,21 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/contactstyle.css
+
+block content
+    div#contactbody 
+        div.heads
+            h2 KINDLY FILL THIS FORM FOR RECEVING OUR SERVICES
+        form(action="/contact", class="form",method="post")
+            input(type="string",name="name",class="input", placeholder="ENTER YOUR NAME") 
+            input(type="string",name="address",class="input", placeholder="ENTER YOUR ADDRESS") 
+            input(type="string",name="age",class="input", placeholder="ENTER YOUR AGE") 
+            input(type="string",name="hobby",class="input", placeholder="ENTER YOUR HOBBY") 
+            button.btn SUMBIT FORM
+        div#foot
+            p Copyright @ YUVRAjTak Dance Website.com All Right Reserved 
+      
+    
